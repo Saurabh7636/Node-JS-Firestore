@@ -7,12 +7,6 @@ const studentRoutes = require('./routes/student-routes');
 
 const app = express();
 
-app.engine("html",require('ejs').renderFile)
-
-app.get('/',(req,res)=> {
-    res.render('index.html')
-})
-
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());

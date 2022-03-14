@@ -7,7 +7,7 @@ const {addStudent,
        deleteStudent
       } = require('../controllers/studentController');
 
-const {uploadImage} = require('../controllers/imageController');
+// const {uploadImage} = require('../controllers/imageController');
 
 const router = express.Router();
 
@@ -19,7 +19,7 @@ router.put(`/:id`, updateStudent);
 router.delete(`/:id`, deleteStudent);
 
 
-router.post(`/imageUpload`, uploadImage);
+// router.post(`/imageUpload`, uploadImage);
 
 
 module.exports = router
